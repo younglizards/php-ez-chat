@@ -13,7 +13,7 @@
 $host = "localhost";
 $port = "13811";
 
-echo "Servidor alojado en " . $host . " en el puerto " . $port;
+echo "Servidor alojado en " . $host . " en el puerto " . $port . ", waiting for connection.";
 
 
 ?>
