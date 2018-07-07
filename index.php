@@ -8,7 +8,7 @@ ob_implicit_flush();
 
 
 $host = "localhost";
-$port = "13813";
+$port = "13840";
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 
 define("SOCKET_LAST_ERROR", "\"" . socket_strerror(socket_last_error($socket)) . "\"\n");
