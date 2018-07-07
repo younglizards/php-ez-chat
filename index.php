@@ -37,7 +37,7 @@ do {
 
         if(($buf = socket_read($msgSocket, 2048, PHP_NORMAL_READ)) === false) {
             echo "El socket_read ha fallado por " . SOCKET_LAST_ERROR;
-            break 2;
+            break;
         }
 
         if(!$buf = trim($buf)) {
@@ -58,7 +58,7 @@ do {
         echo "Mensaje escrito: " . $buf . "\n";
 
     } while (true);
-    socket_close();
+    socket_close($msgSocket);
 } while (true);
 socket_close($socket);
 
